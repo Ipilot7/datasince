@@ -1,0 +1,25 @@
+[project]
+name = "env"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ipilot7",email = "93022197+Ipilot7@users.noreply.github.com"}
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+seaborn = "*"
+scikit-learn = "*" 
+imbalanced-learn = "*"
+
+[tool.poetry]
+packages = [{include = "env", from = "src"}]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
